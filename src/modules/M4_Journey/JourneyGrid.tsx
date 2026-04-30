@@ -3,6 +3,8 @@ import type { StageId } from '@/lib/types'
 import { STAGE_BEHAVIORS } from '@/lib/constants'
 import { useStore } from '@/store/useStore'
 import { cn } from '@/lib/utils'
+import { AIQuestionsTrigger } from './AIQuestionsTrigger'
+import { AIOutputsTrigger } from './AIOutputsTrigger'
 
 const ROW_LABELS: Array<{ key: 'L1' | 'L2' | 'L3' | 'L4'; title: string; sub: string }> = [
   { key: 'L1', title: 'L1 對象', sub: '這階段我面對的是誰' },
@@ -19,7 +21,7 @@ export function JourneyGrid() {
     <div className="rounded-lg border border-line-light bg-paper-card overflow-hidden">
       <div
         className="grid"
-        style={{ gridTemplateColumns: '120px repeat(6, minmax(180px, 1fr))' }}
+        style={{ gridTemplateColumns: '120px repeat(6, minmax(200px, 1fr))' }}
       >
         {/* Header row */}
         <div className="bg-brand-light/40 border-b border-r border-line-light" />
@@ -98,6 +100,9 @@ function RowCells({ row, stages, setField }: RowProps) {
                 placeholder="這階段我要問..."
                 className="w-full text-sm bg-transparent border border-line-light rounded p-2 resize-none focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand placeholder:text-ink-muted/60"
               />
+              <div className="mt-1 flex justify-end">
+                <AIQuestionsTrigger stageId={s.id} />
+              </div>
             </div>
           )
         }
@@ -111,6 +116,9 @@ function RowCells({ row, stages, setField }: RowProps) {
               placeholder="預期對方產出..."
               className="w-full text-sm bg-transparent border border-line-light rounded p-2 resize-none focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand placeholder:text-ink-muted/60"
             />
+            <div className="mt-1 flex justify-end">
+              <AIOutputsTrigger stageId={s.id} />
+            </div>
           </div>
         )
       })}
