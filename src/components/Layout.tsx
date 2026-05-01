@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import { Sidebar, type ProgressMap } from './Sidebar'
 import { ResetDialog } from './ResetDialog'
 import { useStore } from '@/store/useStore'
 
 export function Layout() {
+  const navigate = useNavigate()
   const m1Progress = useStore((s) => s.getM1Completion())
   const m2Progress = useStore((s) => s.getM2Completion())
   const m3Progress = useStore((s) => s.getM3Completion())
@@ -20,14 +21,7 @@ export function Layout() {
   }
 
   const handleExport = () => {
-    const state = useStore.getState().exportState()
-    const json = JSON.stringify(state, null, 2)
-    // eslint-disable-next-line no-console
-    console.log('[銷售軍師] 匯出 — Phase 5 將實作真 PDF\n' + json)
-    alert(
-      '已將完整資料輸出到瀏覽器 console(F12 → Console 分頁)。\n' +
-        'Phase 5 會接 PDF 匯出。'
-    )
+    navigate('/strategy-book')
   }
 
   return (
