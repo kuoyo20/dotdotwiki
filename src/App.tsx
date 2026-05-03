@@ -6,7 +6,11 @@ import Login from "@/pages/Login";
 import AuthCallback from "@/pages/AuthCallback";
 import Onboarding from "@/pages/Onboarding";
 import Home from "@/pages/Home";
+import NewCompany from "@/pages/companies/NewCompany";
+import CompanyDetail from "@/pages/companies/CompanyDetail";
 import AdminDashboard from "@/pages/admin/AdminDashboard";
+import CohortList from "@/pages/admin/CohortList";
+import CohortDetail from "@/pages/admin/CohortDetail";
 
 export default function App() {
   return (
@@ -32,11 +36,45 @@ export default function App() {
             </RequireAuth>
           }
         />
+
         <Route
-          path="/admin/*"
+          path="/companies/new"
+          element={
+            <RequireAuth>
+              <NewCompany />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/companies/:id"
+          element={
+            <RequireAuth>
+              <CompanyDetail />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/admin"
           element={
             <RequireAuth>
               <AdminDashboard />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/admin/cohorts"
+          element={
+            <RequireAuth>
+              <CohortList />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/admin/cohorts/:id"
+          element={
+            <RequireAuth>
+              <CohortDetail />
             </RequireAuth>
           }
         />
