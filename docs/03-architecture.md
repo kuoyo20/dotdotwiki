@@ -1,7 +1,7 @@
 # 03 — System Architecture（系統架構）
 
 > Status: Draft v0.1 · Phase 1
-> 依據 ADR-01 (Vite+React+TS) / ADR-04 (新建 dotdotwiki) / ADR-07 (新 Supabase Tokyo)
+> 依據 ADR-01 (Vite+React+TS) / ADR-04 (新建 360bizthinker) / ADR-07 (新 Supabase Tokyo)
 
 ---
 
@@ -9,7 +9,7 @@
 
 ```
                          ┌─────────────────────────────────────┐
-                         │         dotdotwiki (Vercel)         │
+                         │         360bizthinker (Vercel)         │
                          │   Vite + React 18 + TS + Tailwind   │
                          │                                     │
                          │   shell（auth / nav / dashboard）   │
@@ -66,7 +66,7 @@
 | AI | **Anthropic SDK**（Claude Haiku 4.5 / Sonnet 4.6） + **Gemini**（保留品牌頭像用） | Brand OS 已驗證；參考 [common skills](claude-api) |
 | PDF（Phase 1.5） | `@react-pdf/renderer` | Strategos 已用 |
 | Hosting | **Vercel**（前端）+ Supabase | 同 Brand OS / Strategos pattern |
-| Domain | dotdotwiki.vercel.app（Phase 1）→ 自有 domain（Phase 2 上線時） | 預留 |
+| Domain | 360bizthinker.vercel.app（Phase 1）→ 自有 domain（Phase 2 上線時） | 預留 |
 
 ---
 
@@ -286,7 +286,7 @@ sync-brand-os edge function (cron 每小時)
 
 ### 8.1 環境
 
-- **Production**：dotdotwiki.vercel.app（main 分支自動部署）
+- **Production**：360bizthinker.vercel.app（main 分支自動部署）
 - **Preview**：每個 feature branch（Vercel 自動）
 - **Local**：localhost:5173（Vite dev）
 
@@ -401,7 +401,7 @@ Phase 3 EC 接 Stripe webhook → 寫入 `student_module_access` source='purchas
 
 ### 10.4 Multi-tenant DNS（Phase 3+）
 
-`workspace.slug` → 未來支援子網域：`{slug}.dotdotwiki.com`。
+`workspace.slug` → 未來支援子網域：`{slug}.360bizthinker.com`。
 DB 已有 slug 欄位，前端只需加 middleware 解析子網域。
 
 ---
@@ -417,6 +417,6 @@ DB 已有 slug 欄位，前端只需加 middleware 解析子網域。
 
 ## 12. 開放問題
 
-- [ ] 自有 domain 何時申請？建議 Phase 1 上線前抓 `dotdotwiki.com` 或類似
+- [ ] 自有 domain 何時申請？建議 Phase 1 上線前抓 `360bizthinker.com` 或類似
 - [ ] 顧問之間能否互看？Phase 1 設定每個 workspace 互相隔離
 - [ ] AI 成本控制？Phase 1 月花預估 $30-100 USD（10 人 × 6 模組 × 平均 5 次生成）。建議裝月度預算警報

@@ -31,20 +31,20 @@
 - [ ] **T0.1** 5 份文件完工（00-master / 01-PRD / 02-data-model / 03-architecture / 04-phase1 / 05-risks）— 已進行中
 - [ ] **T0.2** 7 個 ADR 拍板 ✅
 - [ ] **T0.3** 建新 Supabase 專案（Tokyo region）
-  - 命名：`dotdotwiki` 或 `course-platform`
+  - 命名：`360bizthinker` 或 `course-platform`
   - 取得 project_ref + service role key
   - 寫入 `.env.local`
 - [ ] **T0.4** 寫 `migrations/0001_init.sql`（workspaces / cohorts / students / companies / module_data + RLS）
-- [ ] **T0.5** dotdotwiki repo 初始化
+- [ ] **T0.5** 360bizthinker repo 初始化
   - `npm create vite@latest -- --template react-ts`
   - 裝 Tailwind / shadcn / supabase-js / TanStack Query / Zustand / react-router
   - 設定 `.env.local` + Vercel 部署
 - [ ] **T0.6** 第一個 commit + 推 main + 確認 Vercel 自動部署成功（顯示 Vite default page）
-- [x] **T0.7** Domain 決策：Phase 1 用 `dotdotwiki.vercel.app`，W7-W8 上線前考慮抓 `dotdotwiki.com`
+- [x] **T0.7** Domain 決策：Phase 1 用 `360bizthinker.vercel.app`，W7-W8 上線前考慮抓 `360bizthinker.com`
 
 **交付**：
 - 5 份文件
-- 空 Vite 專案部署在 dotdotwiki.vercel.app
+- 空 Vite 專案部署在 360bizthinker.vercel.app
 - Supabase 專案有 6 張 core tables + RLS
 - README.md 寫清楚怎麼接手
 
@@ -348,7 +348,7 @@
 1. 你看完 5 份文件給回饋（修哪幾段）
 2. 我建 Supabase 專案（給我綠燈即可）
 3. 我寫 `0001_init.sql`
-4. 我建 dotdotwiki 空 Vite 專案
+4. 我建 360bizthinker 空 Vite 專案
 5. 推上 main，Vercel 部署，確認 default page 顯示
 6. W1 開始
 

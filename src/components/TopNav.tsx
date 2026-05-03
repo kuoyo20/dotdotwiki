@@ -12,7 +12,7 @@ export default function TopNav() {
     <header className="border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between gap-6">
         <Link to="/home" className="font-serif text-lg hover:opacity-80 transition">
-          dotdotwiki
+          360bizthinker
         </Link>
 
         {activeWorkspace && (

@@ -31,7 +31,7 @@ export default function Login() {
             to="/"
             className="text-xs uppercase tracking-[0.3em] text-muted-foreground hover:text-foreground transition"
           >
-            ← dotdotwiki
+            ← 360bizthinker
           </Link>
           <h1 className="font-serif text-3xl">登入 / 註冊</h1>
           <p className="text-sm text-muted-foreground">

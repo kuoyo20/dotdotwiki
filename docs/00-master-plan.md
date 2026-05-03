@@ -103,11 +103,11 @@
 
 | 選項 | 優點 | 代價 |
 |---|---|---|
-| **A. 新建 dotdotwiki**（這個 repo） | 乾淨，可從零設計 multi-tenant + entitlement，不背歷史包袱 | 要寫 shell（auth / dashboard / module registry / nav）約 1-1.5 週 |
+| **A. 新建 360bizthinker**（這個 repo） | 乾淨，可從零設計 multi-tenant + entitlement，不背歷史包袱 | 要寫 shell（auth / dashboard / module registry / nav）約 1-1.5 週 |
 | B. 擴充 Brand OS（consumer-insight-map） | 已有 auth + admin + RLS pattern，省 1 週 | KOI 學員在用，動到根結構風險高 |
 | C. 擴充 Strategos | Schema 最乾淨（cohorts/students/module_data 已是中台 pattern） | 但 UI 是專為「戰略」設計的學術風，不適合當總入口 |
 
-**我推薦 A**。理由：dotdotwiki 是空的、命名也對（wiki = 知識庫，符合未來知識網站方向）；可以借 Strategos 的資料模型 pattern + 借 Brand OS 的 auth/RLS pattern，不用從零想。
+**我推薦 A**。理由：360bizthinker 是空的、命名也對（wiki = 知識庫，符合未來知識網站方向）；可以借 Strategos 的資料模型 pattern + 借 Brand OS 的 auth/RLS pattern，不用從零想。
 
 ---
 
@@ -138,7 +138,7 @@
 
 | 選項 | 優點 | 代價 |
 |---|---|---|
-| **A. 把它的 schema 拉進中台，前端在 dotdotwiki shell 裡用 Vite 重寫**（推薦） | 統一棧、減少未來合併痛苦 | 影響力密碼前端歸零（但它本來才剛開始） |
+| **A. 把它的 schema 拉進中台，前端在 360bizthinker shell 裡用 Vite 重寫**（推薦） | 統一棧、減少未來合併痛苦 | 影響力密碼前端歸零（但它本來才剛開始） |
 | B. 影響力密碼維持 Next.js 獨立站，shell 用 SSO 串它 | 它可以平行開發 | 兩套前端、兩套部署、長期維護惡夢 |
 
 **我推薦 A**。理由：它都還沒寫多少前端，越早併越省。Schema (12 tables) 是價值，可以直接搬。
@@ -151,7 +151,7 @@
 
 | 選項 | 內容 |
 |---|---|
-| **A. 一個新 Supabase（Tokyo）+ 一個新 Vercel（dotdotwiki）**（推薦） | 全新乾淨，schema 從 ADR-05 設計開始 |
+| **A. 一個新 Supabase（Tokyo）+ 一個新 Vercel（360bizthinker）**（推薦） | 全新乾淨，schema 從 ADR-05 設計開始 |
 | B. 沿用 Brand OS 的 Supabase 擴充 | Brand OS 在 production，schema 動刀風險 |
 | C. 沿用 Strategos 的 Supabase 擴充 | 同上，且 Strategos 已有 7 模組 schema 比較複雜 |
 

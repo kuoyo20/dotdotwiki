@@ -1,4 +1,4 @@
-# Cowork 簡報：把 dotdotwiki 連上 Vercel
+# Cowork 簡報：把 360bizthinker 連上 Vercel
 
 > 任務交辦人：kuoyo
 > 預計時間：5-10 分鐘
@@ -8,14 +8,14 @@
 
 ## 任務目標
 
-把 GitHub 上的 `kuoyo20/dotdotwiki` repo 連結到 Vercel，每次 push 自動部署，第一個版本網址會是 `https://dotdotwiki.vercel.app`（或 Vercel 自動分配的類似名）。
+把 GitHub 上的 `kuoyo20/360bizthinker` repo 連結到 Vercel，每次 push 自動部署，第一個版本網址會是 `https://360bizthinker.vercel.app`（或 Vercel 自動分配的類似名）。
 
 ---
 
 ## 前置條件
 
 - [ ] 你有 `kuoyo20@gmail.com` 帳號，可登入 [vercel.com](https://vercel.com)（kuoyo's projects team）
-- [ ] 你能讀取 [github.com/kuoyo20/dotdotwiki](https://github.com/kuoyo20/dotdotwiki)
+- [ ] 你能讀取 [github.com/kuoyo20/360bizthinker](https://github.com/kuoyo20/360bizthinker)
 - [ ] Vercel ↔ GitHub 已授權（如果沒有，第一次 import 會跳出授權視窗，按下去就好）
 
 ---
@@ -26,8 +26,8 @@
 
 1. 到 [vercel.com/new](https://vercel.com/new)
 2. 確認左上角 team 是 **kuoyo's projects**（不是個人帳號）
-3. 在 "Import Git Repository" 區找 `kuoyo20/dotdotwiki`
-   - 找不到？點 "Adjust GitHub App Permissions" → 開放 `dotdotwiki` repo 給 Vercel → 回來重整
+3. 在 "Import Git Repository" 區找 `kuoyo20/360bizthinker`
+   - 找不到？點 "Adjust GitHub App Permissions" → 開放 `360bizthinker` repo 給 Vercel → 回來重整
 4. 點 **Import**
 
 ### 2. 設定建置（保留預設即可，但確認以下）
@@ -66,14 +66,14 @@
 1. 回到 Vercel 專案 dashboard
 2. 點 **Settings → Git**
 3. 確認 "Production Branch" 是 `main`
-4. 看 "Connected Git Repository" 是 `kuoyo20/dotdotwiki`
+4. 看 "Connected Git Repository" 是 `kuoyo20/360bizthinker`
 5. 完成 ✅
 
 ---
 
 ## 驗證清單（做完請回報 kuoyo）
 
-- [ ] Production URL 可開啟，顯示 dotdotwiki Landing 頁
+- [ ] Production URL 可開啟，顯示 360bizthinker Landing 頁
 - [ ] URL 是什麼？（複製網址回報）
 - [ ] Vercel 專案 ID（在 Settings → General 最下面有）
 - [ ] 環境變數 2 個都有設、3 個環境都勾選
@@ -82,8 +82,8 @@
 
 ## 常見問題
 
-**Q：Vercel 找不到 dotdotwiki repo**
-A：點 "Adjust GitHub App Permissions" → 在 GitHub 授權頁勾 `dotdotwiki` → 回 Vercel 重整。
+**Q：Vercel 找不到 360bizthinker repo**
+A：點 "Adjust GitHub App Permissions" → 在 GitHub 授權頁勾 `360bizthinker` → 回 Vercel 重整。
 
 **Q：建置失敗 "command not found: vite"**
 A：檢查 Install Command 是 `npm install`（不是 `npm ci` 或別的）。

@@ -1,4 +1,4 @@
-# dotdotwiki
+# 360bizthinker
 
 > 課程顧問中台 SaaS — 從問卷診斷到 360 戰略落地，一站式 AI 工作流。
 

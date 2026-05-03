@@ -197,7 +197,7 @@ student_module_access:
 - [ ] 跨模組 context 證明：戰略 AI 在「環境分析」步驟自動引用了該學員影響力密碼裡標出的弱點（可截圖 demo）
 - [ ] 顧問 dashboard 可看到 5 位學員當前進度
 - [ ] RLS 通過：開兩個學員帳號互看不到對方資料
-- [ ] 上線在生產 URL（dotdotwiki.vercel.app 或自有 domain）
+- [ ] 上線在生產 URL（360bizthinker.vercel.app 或自有 domain）
 - [ ] 第一批學員給出 NPS：至少 1 個 9-10 分推薦
 
 ---

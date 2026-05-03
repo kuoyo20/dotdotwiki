@@ -5,7 +5,7 @@ export default function Landing() {
     <main className="min-h-screen flex items-center justify-center px-6">
       <div className="max-w-2xl text-center space-y-8">
         <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          dotdotwiki · v0.1
+          360bizthinker · v0.1
         </p>
         <h1 className="font-serif text-5xl md:text-6xl leading-tight">
           一條鏈走完
@@ -24,7 +24,7 @@ export default function Landing() {
             登入
           </Link>
           <a
-            href="https://github.com/kuoyo20/dotdotwiki"
+            href="https://github.com/kuoyo20/360bizthinker"
             target="_blank"
             rel="noreferrer"
             className="inline-flex h-11 items-center px-6 border border-border rounded-md font-medium hover:bg-muted transition"

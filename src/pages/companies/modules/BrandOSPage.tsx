@@ -116,7 +116,7 @@ export default function BrandOSPage() {
             <h2 className="text-sm font-medium">為什麼是「外部模組」</h2>
             <p className="text-xs text-muted-foreground mt-1 max-w-prose leading-relaxed">
               品牌大師（Brand OS）原本是 KOI 課程在用的獨立站，現役學員仍在用，動不得。
-              dotdotwiki 採用「同步」整合：你在 Brand OS 完成的金字塔 / Soul /
+              360bizthinker 採用「同步」整合：你在 Brand OS 完成的金字塔 / Soul /
               同理心地圖會匯回這裡，讓 360 戰略模組能拿到當作 context。
             </p>
           </div>
@@ -245,7 +245,7 @@ export default function BrandOSPage() {
             <ol className="text-sm text-muted-foreground space-y-2 list-decimal pl-5">
               <li>點上方「前往 Brand OS」開新分頁</li>
               <li>
-                用<strong> 跟 dotdotwiki 同一個 email </strong>登入或註冊
+                用<strong> 跟 360bizthinker 同一個 email </strong>登入或註冊
                 （首次需要課程邀請碼，請洽 kuoyo）
               </li>
               <li>

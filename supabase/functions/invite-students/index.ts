@@ -63,7 +63,7 @@ Deno.serve(async (req: Request) => {
       return jsonResponse({ error: "not authorized" }, 403);
     }
 
-    const origin = req.headers.get("origin") ?? "https://dotdotwiki.vercel.app";
+    const origin = req.headers.get("origin") ?? "https://360bizthinker.vercel.app";
     const redirectTo = `${origin}/auth/callback`;
 
     const results: InviteResult[] = [];

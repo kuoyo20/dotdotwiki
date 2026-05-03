@@ -192,7 +192,7 @@
 主要工作：
 - Multi-tenant 強化（顧問 A 之間完全隔離 verify）
 - White label（顧問可換 logo / 主色 / 文案）
-- 子網域（`{slug}.dotdotwiki.com`）
+- 子網域（`{slug}.360bizthinker.com`）
 - 自助開 workspace 流程
 - SLA / 客服文件
 
@@ -205,7 +205,7 @@
 | 2026-05-03 | ADR-01: 全部 Vite + React | 5/6 已是 | 全 Next.js 太貴 |
 | 2026-05-03 | ADR-02: forfunfun 重寫 | 不重寫斷鏈 | SSO 嵌入 |
 | 2026-05-03 | ADR-03: 顧問 = tenant | 未來可賣 | 不分 tenant |
-| 2026-05-03 | ADR-04: 新建 dotdotwiki | 乾淨 | fork Brand OS |
+| 2026-05-03 | ADR-04: 新建 360bizthinker | 乾淨 | fork Brand OS |
 | 2026-05-03 | ADR-05: companies + students | 直觀 | entities |
 | 2026-05-03 | ADR-06: 影響力密碼改 Vite | 越早併越省 | 維持 Next.js |
 | 2026-05-03 | ADR-07: 全新 Supabase Tokyo | 乾淨起點 | 沿用 Brand OS / Strategos |
@@ -218,7 +218,7 @@
 
 > 這些不影響 W1 開工，但 W2-W8 期間要陸續答。
 
-- [x] **Domain**：Phase 1 用 dotdotwiki.vercel.app；W7-W8 上線前抓 dotdotwiki.com
+- [x] **Domain**：Phase 1 用 360bizthinker.vercel.app；W7-W8 上線前抓 360bizthinker.com
 - [ ] 顧問 onboarding：未來其他顧問怎麼上來？Phase 1 只 kuoyo 自己用，schema 已支援。
 - [ ] 學員邀請信文案：誰寫？（你寫 / 我幫你草）
 - [x] **第一批 Beta 學員**：MX (MiracleX) 內部上過課的學生 5 位（kuoyo W8 前選定名字）
